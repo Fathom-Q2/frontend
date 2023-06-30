@@ -1,0 +1,30 @@
+.menu {
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    width: 400px;
+  }
+  
+  .menuItem {
+    cursor: pointer;
+    flex-basis: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #303048;
+    color: #8C8CA3;
+  }
+  
+  .selected {
+    cursor: pointer;
+    flex-basis: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #434361;
+    color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  

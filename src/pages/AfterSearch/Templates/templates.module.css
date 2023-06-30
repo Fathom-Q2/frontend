@@ -1,0 +1,14 @@
+.header {
+    display: flex;
+    padding-top: 60px;
+    flex-direction: row;
+    color: white;
+    align-items: center;
+    justify-content: center;
+  }
+.mainmenu {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

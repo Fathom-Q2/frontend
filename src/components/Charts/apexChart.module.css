@@ -1,0 +1,9 @@
+.chart {
+    background-color: #434361;
+}
+
+.chart svg path {
+    stroke-width: 2px;
+  }
+
+

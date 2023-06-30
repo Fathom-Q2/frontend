@@ -1,0 +1,22 @@
+.textField {
+  border-radius: 300px;
+  width: 1100px;
+  background-color: #51516A;
+  color: white;
+  border: none; /* Disable the border */
+  overflow: hidden; /* Hide any overflowing content */
+}
+
+.noHoverBorder .MuiOutlinedInput-notchedOutline {
+  border-color: transparent !important;
+  border: none;
+}
+
+.textField .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border: none;
+}
+
+.textField input::placeholder {
+  color: white;
+  font-size: 20px;
+}
