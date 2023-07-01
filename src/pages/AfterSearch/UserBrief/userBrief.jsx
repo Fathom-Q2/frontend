@@ -42,7 +42,7 @@ function UserBrief() {
     const [response, setResponse] = useState([]);
 
     useEffect(() => {
-        axios.get(`http://localhost:3000/userbrief?protocolAddress=${address}`,)
+        axios.get(`http://localhost:3000/address?protocolAddress=${address}`,)
             .then((response) => {
                 console.log(response.data);
                 console.log(response.data['newDatasChart']['newDatasMonthChart']);
@@ -52,10 +52,10 @@ function UserBrief() {
                 setNewDatasChart(response.data['newDatasChart']['newDatasMonthChart']);
                 setDatasHistory(response.data['newDatasHistory']);
                 setDatasList(response.data['newDatasList'].slice(0, 6));
-                setIsLoading(false);
+                setIsLoading(false); 
             })
             .catch(function (error) {
-                console.error(error.response);
+                console.error('error couldnt');
                 setIsLoading(false);
             })
     }, []);
@@ -230,7 +230,7 @@ export default UserBrief;
     //         })
     // }, [])
 
-    //0xD54f502e184B6B739d7D27a6410a67dc462D69c8
+    //00x7128AF8F5AA6abe92b5f9ba9545146027A995B16
 
     // useEffect(() => {
     //     axios.get(`http://localhost:3000/userbrief`,

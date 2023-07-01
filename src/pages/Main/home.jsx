@@ -44,7 +44,7 @@ function Home(props) {
 
   const handleSubmit = () => {
     console.log(address);
-    setAddress("");
+    setAddress('');
     navigate(`/userbrief/${address}`);
   };
 

@@ -4,6 +4,7 @@ import SearchIcon from "@material-ui/icons/Search";
 import style from "./customedTextField.module.css";
 import { useNavigate } from 'react-router-dom';
 
+//0xD54f502e184B6B739d7D27a6410a67dc462D69c8
 
 const CustomTextField = ({width, honey }) => {
   const [address, setAddress] = useState(honey ? "0xD54f502e184B6B739d7D27a6410a67dc462D69c8" : "");
@@ -14,7 +15,7 @@ const CustomTextField = ({width, honey }) => {
   };
 
   const handleSubmit = () => {
-    setAddress("");
+    setAddress('');
     navigate(`/userbrief/${address}`);
   };
 
